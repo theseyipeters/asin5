@@ -12,6 +12,7 @@ import InvestorsNetwork from "./sections/InvestorsNetwork";
 import EquityJobs from "./sections/EquityJobs";
 import BlogsandResources from "./sections/BlogsandResources";
 import AsFeatured from "./sections/AsFeatured";
+import Footer from "@/components/Footer";
 
 export default function Homepage() {
 	return (
@@ -35,6 +36,8 @@ export default function Homepage() {
 					<BlogsandResources />
 					<AsFeatured />
 				</div>
+
+				<Footer />
 			</div>
 		</div>
 	);

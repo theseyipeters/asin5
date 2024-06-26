@@ -24,7 +24,10 @@ export default function VideoCard() {
 				</div>
 
 				<div className="h-auto w-fit">
-					<Image src={book1} />
+					<Image
+						alt="book"
+						src={book1}
+					/>
 				</div>
 			</div>
 		</div>

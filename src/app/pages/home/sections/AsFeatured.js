@@ -30,7 +30,7 @@ export default function AsFeatured() {
 
 			<div className="w-[70%] my-[100px] flex flex-col items-center">
 				<h1 className="text-8xl leading-[104px] text-center text-pretty">
-					Let's build companies that help everyone succeed
+					Let&apos;s build companies that help everyone succeed
 				</h1>
 
 				<div className="w-[40%] flex flex-row gap-3 items-center justify-between mt-[44px]">

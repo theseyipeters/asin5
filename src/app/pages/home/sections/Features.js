@@ -6,10 +6,10 @@ export default function Features() {
 		<section className="bg-white-2 py-[80px] flex flex-col items-center justify-center">
 			<div className="bg-white-1 w-[50%] py-8 px-5 rounded-3xl flex flex-col items-center">
 				<p className="text-center text-xl font-light">
-					"Nigeria and Africa has a massive network effect that have not be
+					&quot;Nigeria and Africa has a massive network effect that have not be
 					fully utilized. With Nigerians/Africans in every country and territory
 					of the world, we can scale an African business to 100+ countries in
-					few weeks"
+					few weeks&quot;
 				</p>
 
 				<div className="flex flex-col gap-1 items-center w-fit mt-6">

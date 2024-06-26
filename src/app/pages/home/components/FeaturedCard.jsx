@@ -15,7 +15,10 @@ export default function FeaturedCard() {
 			</div>
 			<div className="w-[30%] h-full bg-transparent px-5 py-10 flex flex-col gap-4">
 				<div>
-					<Image src={bujnews} />
+					<Image
+						alt="bujnews"
+						src={bujnews}
+					/>
 				</div>
 
 				<div className="flex flex-col gap-2">

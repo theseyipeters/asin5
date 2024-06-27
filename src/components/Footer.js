@@ -15,7 +15,7 @@ import unnamed from "@/assets/unnamed.svg";
 export default function Footer() {
 	return (
 		<footer className="pt-[44px] bg-black-1 text-white-1 h-fit w-full">
-			<div className="w-full md:w-[80%] lg:w-[50%] mb-[40px] px-[30px] md:px-[50px] lg:px-[120px] flex flex-col gap-3">
+			<div className="w-full md:w-[80%] lg:w-[50%] mb-[40px] px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] flex flex-col gap-3">
 				<h1 className="text-2xl md:text-4xl lg:text-6xl font-medium">
 					Newsletter
 				</h1>
@@ -38,7 +38,7 @@ export default function Footer() {
 				</form>
 			</div>
 			<hr className="border-gray-1/30" />
-			<div className="px-[30px] md:px-[50px] lg:px-[120px] flex flex-col lg:flex-row w-full h-fit">
+			<div className="px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] flex flex-col lg:flex-row w-full h-fit">
 				<div className="w-full h-full border-r-none lg:border-r border-b lg:borger-b-none border-gray-1/30">
 					<div className="mt-[44px] mb-[22px] w-full flex flex-col lg:flex-row items-start justify-between gap-4 pr-5">
 						<div className="flex flex-col w-full lg:w-[220px] gap-[14px]">
@@ -292,7 +292,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<hr className="border-gray-1/30" />
-			<div className="w-full px-[30px] md:px-[50px] lg:px-[120px] py-10 h-full lg:h-[180px] flex flex-col lg:flex-row items-start gap-6 justify-between">
+			<div className="w-full px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] py-10 h-full lg:h-[180px] flex flex-col lg:flex-row items-start gap-6 justify-between">
 				<div className="w-full lg:w-[65%] flex flex-col items-start justify-between h-full">
 					<p className="font-light text-sm text-center">
 						Guaranteed 2x on your service or cash investment, usually been the

@@ -49,9 +49,9 @@ export default function InvestorsNetwork() {
 		},
 	];
 	return (
-		<section className="px-[30px] md:px-[50px] lg:px-[120px] w-full flex flex-col">
+		<section className="px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] w-full flex flex-col">
 			<div className="w-full flex flex-col items-center justify-center">
-				<div className="w-full lg:w-[80%] flex flex-col gap-4 lg:gap-8 items-center px-[30px] md:px-[50px] lg:px-[120px]">
+				<div className="w-full lg:w-[80%] flex flex-col gap-4 lg:gap-8 items-center px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px]">
 					<h1 className="w-full lg:w-[80%]  text-[24px] md:text-[28px] lg:text-5xl text-center font-medium leading-[32px] text-black-1 mx-auto">
 						SINC Investors Network
 					</h1>

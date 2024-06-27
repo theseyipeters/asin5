@@ -18,9 +18,10 @@ const GlobalButton = ({
 		"transition",
 		"w-full",
 		"duration-300",
-		"font-semibold",
+		"font-medium",
 		"ease-in-out",
 		"text-center",
+		"flex-shrink-0",
 		{
 			// Variant styles
 

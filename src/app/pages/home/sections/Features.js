@@ -3,7 +3,7 @@ import NetworkCard from "../components/NetworkCard";
 
 export default function Features() {
 	return (
-		<section className="bg-white-2 py-[40px] lg:py-[80px] px-[30px] md:px-[50px] lg:px-[120px] flex flex-col items-center justify-center">
+		<section className="bg-white-2 py-[40px] lg:py-[80px] px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] flex flex-col items-center justify-center">
 			<div className="bg-white-1 w-full  lg:w-[50%] py-8 px-5 rounded-3xl flex flex-col items-center">
 				<p className="text-center text-base md:text-lg lg:text-xl font-light">
 					&quot;Nigeria and Africa has a massive network effect that have not be

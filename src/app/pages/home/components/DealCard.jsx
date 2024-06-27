@@ -3,17 +3,10 @@ import DealListItem from "./DealListItem";
 
 const DealCard = ({ dealList, dealNumber }) => {
 	return (
-		<div className="w-[25%] h-[272px] bg-transparent p-5 border-t border-r border-b border-gray-1/30 flex flex-col gap-3">
+		<div className="w-full md:w-[500px] lg:w-[25%] h-fit md:h-fit lg:h-full bg-transparent p-5 border-t border-r-0 lg:border-r border-b border-gray-1/30 flex flex-col gap-3 flex-shrink-0">
 			<h3 className="text-lg font-medium">Deal {dealNumber}</h3>
 
 			<ul className="flex flex-col gap-1">
-				{/* <li>
-					✓ <span className="font-light">Idea Stage:</span> $5k for 5% Equity
-				</li>
-				<li>✓ Expected Revenue at This Stage: $0/mth</li>
-				<li>✓ Duration of Raise: 1mth</li>
-				<li>✓ Who Can Invest: People with Domain Expertise and Advisors </li> */}
-
 				{dealList.map((item, index) => (
 					<DealListItem
 						key={index}

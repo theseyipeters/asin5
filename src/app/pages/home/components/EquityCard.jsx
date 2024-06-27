@@ -1,24 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import kreeca from "@/assets/portfolioLogos/kreeca.svg";
 import GlobalButton from "@/components/ui/GlobalButton";
 
 export default function EquityCard() {
+	const [buttonSize, setButtonSize] = useState("sm");
+
+	useEffect(() => {
+		const updateButtonSize = () => {
+			if (window.innerWidth >= 1024) {
+				setButtonSize("lg");
+			} else if (window.innerWidth >= 768) {
+				setButtonSize("md");
+			} else {
+				setButtonSize("sm");
+			}
+		};
+
+		// Set the initial size
+		updateButtonSize();
+
+		// Add event listener to handle screen resize
+		window.addEventListener("resize", updateButtonSize);
+
+		// Clean up event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", updateButtonSize);
+		};
+	}, []);
+
 	return (
-		<div className="w-[25%] h-fit bg-white-1 rounded-2xl p-5">
-			<div className="flex flex-col gap-5">
-				<div className="flex flex-col gap-3">
+		<div className="w-full md:w-[350px] lg:w-full h-fit bg-white-1 rounded-2xl p-5">
+			<div className="w-full flex flex-col gap-5">
+				<div className="w-full flex flex-col gap-3">
 					<Image
 						src={kreeca}
 						alt="kreeca"
-						className="w-3/5"
+						className="w-2/5 lg:w-3/5"
 					/>
 					<p className="font-light">
 						This company is a SAAS Startup that builds AI copy generator...
 					</p>
 				</div>
 
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-4 w-full">
 					<h3 className="text-lg font-medium">UX Strategist</h3>
 
 					<div className="flex flex-row items-center justify-between">
@@ -56,7 +81,7 @@ export default function EquityCard() {
 				<div className="w-[70%]">
 					<GlobalButton
 						variant={"primary"}
-						size={"lg"}
+						size={buttonSize}
 						state="default">
 						View Details
 					</GlobalButton>

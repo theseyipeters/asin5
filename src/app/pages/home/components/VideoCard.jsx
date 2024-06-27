@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function VideoCard() {
 	return (
-		<div className="w-[33.3%] h-fit bg-white-1">
+		<div className="w-full lg:w-[33.3%] h-fit">
 			<iframe
 				className="w-full h-[335px]"
 				src="https://www.youtube.com/embed/bNpx7gpSqbY?si=VxqIl8x9c36oA9WS"
@@ -17,7 +17,7 @@ export default function VideoCard() {
 			<div className="flex flex-row items-center justify-between mt-8">
 				<div className="w-full">
 					<h2 className="font-medium">Top Ten Most Powerful Startup</h2>
-					<p className="w-[80%] font-light">
+					<p className="w-[80%] font-light text-sm md:text-base lg:text-base">
 						Top Ten Most Powerful Startup. Top Ten Most Powerful Startup. Top
 						Ten Most Powerful Startup
 					</p>

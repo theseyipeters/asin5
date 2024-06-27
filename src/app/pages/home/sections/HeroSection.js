@@ -1,38 +1,70 @@
-import React from "react";
-import GlobalButton from "@/components/ui/GlobalButton";
-import Image from "next/image";
-import heroimg1 from "@/assets/heroimg1.jpeg";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import HeroCard from "../components/HeroCard";
+import HeroCard2 from "../components/HeroCard2";
+import HeroCard3 from "../components/HeroCard3";
 
 export default function HeroSection() {
-	return (
-		<section className="hero-container w-full flex h-[500px] relative">
-			<div className="w-1/2 h-full bg-white-1 py-20 px-[120px] flex flex-col gap-6">
-				<div className="w-[90%]">
-					<h3 className="text-[32px] font-medium leading-[51.2px] text-black-1">
-						SINC Partners is a service incubation company{" "}
-					</h3>
-					<p className="text-gray-1 leading-[32.2px] font-light">
-						Connecting experts in product development and growth marketing
-						willing to offer their services to amazing startups in exchange
-						for minute equity (usually 0.5% to 2%).
-					</p>
-				</div>
+	const [activeSection, setActiveSection] = useState(2);
 
-				<GlobalButton
-					className={"max-w-48"}
-					variant={"primary"}
-					size={"md"}
-					state="default">
-					SINC With Us
-				</GlobalButton>
-			</div>
-			<div className="w-1/2 h-full bg-black-1 relative">
-				<Image
-					src={heroimg1}
-					alt="heroImg-1"
-					className="w-full h-full object-cover"
-				/>
-				<span className="bg-black-1/50 h-full w-full absolute top-0 left-0"></span>
+	const renderActiveSection = () => {
+		switch (activeSection) {
+			case 0:
+				return <HeroCard />;
+			case 1:
+				return <HeroCard2 />;
+			case 2:
+				return <HeroCard3 />;
+			default:
+				return <HeroCard />;
+		}
+	};
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setActiveSection((prevSection) => (prevSection + 1) % 3);
+		}, 10000);
+
+		return () => clearInterval(interval);
+	}, []);
+
+	return (
+		<section className="hero-container w-full flex h-[400px] lg:h-[550px] relative ">
+			<AnimatePresence mode="wait">
+				<motion.div
+					key={activeSection}
+					initial={{ opacity: 0, x: 100 }}
+					animate={{ opacity: 1, x: 0 }}
+					exit={{ opacity: 0, x: -100 }}
+					transition={{ duration: 0.5 }}
+					className="w-full">
+					{renderActiveSection()}
+				</motion.div>
+			</AnimatePresence>
+			<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 controls flex gap-2 ">
+				<button
+					className={`${
+						activeSection === 0
+							? "bg-black-1 border-gray-200 border"
+							: "bg-gray-200"
+					} w-[10px] h-[10px] rounded-full`}
+					onClick={() => setActiveSection(0)}></button>
+				<button
+					className={`${
+						activeSection === 1
+							? "bg-black-1 border-gray-200 border"
+							: "bg-gray-200"
+					} w-[10px] h-[10px] rounded-full`}
+					onClick={() => setActiveSection(1)}></button>
+				<button
+					className={`${
+						activeSection === 2
+							? "bg-black-1 border-gray-200 border"
+							: "bg-gray-200"
+					} w-[10px] h-[10px] rounded-full`}
+					onClick={() => setActiveSection(2)}></button>
 			</div>
 		</section>
 	);

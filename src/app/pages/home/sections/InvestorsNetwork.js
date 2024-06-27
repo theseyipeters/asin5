@@ -49,34 +49,36 @@ export default function InvestorsNetwork() {
 		},
 	];
 	return (
-		<section className="px-[120px] w-full flex flex-col">
+		<section className="px-[30px] md:px-[50px] lg:px-[120px] w-full flex flex-col">
 			<div className="w-full flex flex-col items-center justify-center">
-				<div className=" w-[65%] flex flex-col items-center">
-					<h1 className="font-medium text-5xl text-center leading-[72.8px]">
+				<div className="w-full lg:w-[80%] flex flex-col gap-4 lg:gap-8 items-center px-[30px] md:px-[50px] lg:px-[120px]">
+					<h1 className="w-full lg:w-[80%]  text-[24px] md:text-[28px] lg:text-5xl text-center font-medium leading-[32px] text-black-1 mx-auto">
 						SINC Investors Network
 					</h1>
-					<p className="text-center font-light">
+					<p className="text-sm md:text-base lg:text-base text-center font-light">
 						Our deals are structured not just to take in investments but to
 						onboard owners passionate about our solutions. Our portfolio
 						companies are valued at $50k at start, with these low valuation, you
 						are guaranteed at least 2x-5x, usually been the first to invest.
 						<br />
 						<br />
-						<span className="font-medium">Disclaimer:</span> These deal flows is
-						a statement of our projections and may differ from stage to stage
-						and from venture to venture and the guarantee is for deal 1, usually
-						the first to invest
+						<span className="font-medium hidden lg:block">
+							Disclaimer:
+						</span>{" "}
+						These deal flows is a statement of our projections and may differ
+						from stage to stage and from venture to venture and the guarantee is
+						for deal 1, usually the first to invest
 					</p>
 				</div>
 			</div>
 			<div className="mt-[44px] flex flex-col gap-8">
 				<div className="flex flex-col gap-8">
-					<h2 className="text-xl font-medium">
+					<h2 className="text-base md:text-lg lg:text-xl font-medium text-center lg:text-left">
 						Angel Investors & Venture Capital{" "}
 						<span className="font-light">(Invest from $50k and above)</span>
 					</h2>
 
-					<div className="w-full flex flex-row">
+					<div className="lg:h-[300px] lg:min-h-[200px] lg:max-h-fit w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-normal">
 						<DealCard
 							dealNumber={"1"}
 							dealList={deal1}
@@ -96,12 +98,12 @@ export default function InvestorsNetwork() {
 					</div>
 				</div>
 				<div className="flex flex-col gap-8">
-					<h2 className="text-xl font-medium">
+					<h2 className="text-base md:text-lg lg:text-xl font-medium text-center lg:text-left">
 						Micro Angel Investors & Service incubators{" "}
 						<span className="font-light">(Invest from $500 & above)</span>
 					</h2>
 
-					<div className="w-full flex flex-row">
+					<div className="lg:h-[300px] lg:min-h-[200px] lg:max-h-fit w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-normal">
 						<DealCard
 							dealNumber={"5"}
 							dealList={deal1}

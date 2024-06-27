@@ -36,3 +36,41 @@
 * {
 	font-family: "Matter";
 }
+
+.bg-grad {
+	background: linear-gradient(
+		97deg,
+		#212121 -133.93%,
+		rgba(166, 166, 166, 0) 188.9%
+	);
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.slide-in-right {
+	animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+.slide-in-left {
+	animation: slideInLeft 0.5s ease-in-out forwards;
+}

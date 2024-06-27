@@ -9,7 +9,7 @@ import hero4 from "@/assets/hero4.png";
 const HeroCard3 = () => {
 	return (
 		<div className="w-full flex flex-shrink-0 h-full">
-			<div className="w-full lg:w-1/2 h-full bg-white-1 px-[30px] md:px-[50px] lg:px-[120px] flex flex-col items-start justify-center gap-6">
+			<div className="w-full lg:w-1/2 h-full bg-white-1 px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] flex flex-col items-start justify-center gap-6">
 				<div className="w-full md:w-[80%] lg:w-[85%] flex flex-col gap-2 lg:gap-0">
 					<h3 className="text-[24px] md:text-[28px] lg:text-[32px] font-medium leading-[32px] md:leading-[32px]  lg:leading-[51.2px] text-black-1 ">
 						Come with an idea, leave with a company.

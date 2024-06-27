@@ -38,8 +38,8 @@ export default function Navbar() {
 
 	return (
 		<>
-			<nav className="hidden px-[30px] md:px-[50px] lg:px-[120px] py-[20px] w-full lg:flex flex-row items-center justify-between bg-white-2 min-h-[100px] z-40">
-				<div className="flex flex-row items-center gap-6 w-fit">
+			<nav className="hidden px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] py-[20px] w-full lg:flex flex-row items-center justify-between bg-white-2 min-h-[100px] z-40">
+				<div className="flex flex-row items-center gap-6">
 					<SincLogo />
 
 					<ul className="flex flex-row gap-4">
@@ -54,25 +54,29 @@ export default function Navbar() {
 					</ul>
 				</div>
 
-				<div className="flex flex-row gap-3 w-fit">
-					<GlobalButton
-						className={"max-w-48"}
-						variant={"secondary"}
-						size={"md"}
-						state="default">
-						SINC With Us
-					</GlobalButton>
-					<GlobalButton
-						className={"min-w-48"}
-						variant={"primary"}
-						size={"md"}
-						state="default">
-						Apply to SIP 1.0
-					</GlobalButton>
+				<div className="flex flex-row gap-3 lg:hidden xl:flex">
+					<div>
+						<GlobalButton
+							className={"w-fit"}
+							variant={"secondary"}
+							size={"md"}
+							state="default">
+							SINC With Us
+						</GlobalButton>
+					</div>
+					<div>
+						<GlobalButton
+							className={"w-fit"}
+							variant={"primary"}
+							size={"md"}
+							state="default">
+							Apply to SIP 1.0
+						</GlobalButton>
+					</div>
 				</div>
 			</nav>
 
-			<nav className="lg:hidden px-[30px] md:px-[50px] lg:px-[120px] py-[20px] w-full flex flex-row items-center justify-between bg-white-2 h-[80px] z-40">
+			<nav className="lg:hidden px-[30px] md:px-[50px] lg:px-[100px] xl:px-[120px] py-[20px] w-full flex flex-row items-center justify-between bg-white-2 h-[80px] z-40">
 				{!showMenu && (
 					<div className="flex flex-row items-center justify-between gap-6 w-fit">
 						<SincLogoSM />

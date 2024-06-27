@@ -14,15 +14,17 @@ import unnamed from "@/assets/unnamed.svg";
 
 export default function Footer() {
 	return (
-		<footer className=" py-[44px] bg-black-1 text-white-1 h-fit w-full">
-			<div className="w-[50%] mb-[40px] px-[30px] md:px-[50px] lg:px-[120px] flex flex-col gap-3">
-				<h1 className="text-6xl font-medium">Newsletter</h1>
-				<p className="font-light">
+		<footer className="pt-[44px] bg-black-1 text-white-1 h-fit w-full">
+			<div className="w-full md:w-[80%] lg:w-[50%] mb-[40px] px-[30px] md:px-[50px] lg:px-[120px] flex flex-col gap-3">
+				<h1 className="text-2xl md:text-4xl lg:text-6xl font-medium">
+					Newsletter
+				</h1>
+				<p className="font-light text-sm md:text-base">
 					Get the latest about SINC Partners, our startup Incubator program,
 					Portfolio company offerings - straight into your inbox.
 				</p>
 
-				<form className="mt-[61px] w-[80%]">
+				<form className="mt-[44px] lg:mt-[61px] w-full lg:w-[80%]">
 					<div className="border border-gray-3 rounded-full h-[50px] relative">
 						<input
 							placeholder="Enter your email address"
@@ -36,10 +38,10 @@ export default function Footer() {
 				</form>
 			</div>
 			<hr className="border-gray-1/30" />
-			<div className="px-[30px] md:px-[50px] lg:px-[120px] flex flex-row w-full h-fit">
-				<div className="w-full h-full border-r border-gray-1/30">
-					<div className="mt-[44px] mb-[22px] w-full flex items-start justify-between gap-4 pr-5">
-						<div className="flex flex-col w-[220px] gap-[14px]">
+			<div className="px-[30px] md:px-[50px] lg:px-[120px] flex flex-col lg:flex-row w-full h-fit">
+				<div className="w-full h-full border-r-none lg:border-r border-b lg:borger-b-none border-gray-1/30">
+					<div className="mt-[44px] mb-[22px] w-full flex flex-col lg:flex-row items-start justify-between gap-4 pr-5">
+						<div className="flex flex-col w-full lg:w-[220px] gap-[14px]">
 							<div>
 								<SincLogo2 />
 							</div>
@@ -51,190 +53,192 @@ export default function Footer() {
 								(usually 0.5% to 2%)
 							</p>
 						</div>
-						<div className="w-[122px]">
-							<h3 className="font-medium text-lg">Platforms</h3>
-							<ul className="mt-3 flex flex-col gap-2">
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-							</ul>
-						</div>
-						<div className="w-[122px]">
-							<h3 className="font-medium text-lg">Initiatives</h3>
-							<ul className="mt-3 flex flex-col gap-2">
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-							</ul>
-						</div>
-						<div className="w-[122px]">
-							<h3 className="font-medium text-lg">About Us</h3>
-							<ul className="mt-3 flex flex-col gap-2">
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-							</ul>
-						</div>
-						<div className="w-[122px]">
-							<h3 className="font-medium text-lg">More</h3>
-							<ul className="mt-3 flex flex-col gap-2">
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-								<Link
-									className="font-light text-gray-5"
-									href={"/"}>
-									Kofoundme
-								</Link>
-							</ul>
+						<div className="grid grid-cols-2 lg:flex flex-row flex-wrap items-center justify-between gap-x-4">
+							<div className="w-[180px] mb-4 lg:w-[122px]">
+								<h3 className="font-medium text-lg">Platforms</h3>
+								<ul className="mt-3 flex flex-col gap-2">
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+								</ul>
+							</div>
+							<div className="w-[180px] mb-4 lg:w-[122px]">
+								<h3 className="font-medium text-lg">Initiatives</h3>
+								<ul className="mt-3 flex flex-col gap-2">
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+								</ul>
+							</div>
+							<div className="w-[180px] mb-4 lg:w-[122px]">
+								<h3 className="font-medium text-lg">About Us</h3>
+								<ul className="mt-3 flex flex-col gap-2">
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+								</ul>
+							</div>
+							<div className="w-[180px] mb-4 lg:w-[122px]">
+								<h3 className="font-medium text-lg">More</h3>
+								<ul className="mt-3 flex flex-col gap-2">
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+									<Link
+										className="font-light text-gray-5"
+										href={"/"}>
+										Kofoundme
+									</Link>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div className="w-[25%] h-full  px-5 flex flex-row items-start gap-10 justify-between">
-					<div className="w-[520px] flex flex-col gap-10">
+				<div className="w-full lg:w-[25%] h-full px-5 flex flex-row items-start gap-10 justify-between pb-4 lg:pb-0">
+					<div className="w-full lg:w-[520px] flex flex-col gap-10">
 						<div className="mt-[44px] w-full">
 							<h3 className="font-medium text-lg">Locations</h3>
 							<ul className="mt-3 flex flex-col gap-2">
@@ -288,14 +292,14 @@ export default function Footer() {
 				</div>
 			</div>
 			<hr className="border-gray-1/30" />
-			<div className="px-[30px] md:px-[50px] lg:px-[120px] py-10 h-[180px] flex flex-row items-start gap-6 justify-between">
-				<div className="w-[65%] flex flex-col items-start justify-between h-full">
-					<p className="font-light text-sm">
+			<div className="w-full px-[30px] md:px-[50px] lg:px-[120px] py-10 h-full lg:h-[180px] flex flex-col lg:flex-row items-start gap-6 justify-between">
+				<div className="w-full lg:w-[65%] flex flex-col items-start justify-between h-full">
+					<p className="font-light text-sm text-center">
 						Guaranteed 2x on your service or cash investment, usually been the
 						first to invest. Get in early and SINC your guaranty!
 					</p>
 
-					<div className="flex flex-row items-center justify-between w-full">
+					<div className="hidden lg:flex flex-col lg:flex-row items-center justify-between w-full">
 						<p className="font-medium">
 							© 2023 SINC Partners Ltd. All rights reserved
 						</p>
@@ -319,17 +323,41 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="w-[25%] h-[100px] flex flex-col">
-					<div className="flex flex-row items-center w-full gap-6">
+				<div className="w-full lg:w-[25%] h-full lg:h-[100px] flex flex-col">
+					<div className="flex flex-col lg:flex-row items-center w-full gap-3 lg-gap-6">
 						<Gasus />
 
-						<p className="font-light text-xs w-[80%]">
+						<p className="font-light text-xs w-full lg:w-[80%] text-center lg:text-left">
 							We are a business built on the foundation of Christian values and
 							belief
 						</p>
 					</div>
 
-					<div className="socials w-fit mt-auto ml-auto flex flex-row items-end justify-end gap-4">
+					<div className="mt-[20px] lg:mt-0 flex flex-col lg:flex-row lg:hidden items-center gap-4 justify-between w-full">
+						<p className="font-medium text-sm md:text-base">
+							© 2023 SINC Partners Ltd. All rights reserved
+						</p>
+
+						<div className="flex flex-row gap-3">
+							<Link
+								className="underline underline-offset-4 font-medium text-sm md:text-base"
+								href={"/"}>
+								Privacy Policy{" "}
+							</Link>
+							<Link
+								className="underline underline-offset-4 font-medium text-sm md:text-base"
+								href={"/"}>
+								Privacy Policy{" "}
+							</Link>
+							<Link
+								className="underline underline-offset-4 font-medium text-sm md:text-base"
+								href={"/"}>
+								Privacy Policy{" "}
+							</Link>
+						</div>
+					</div>
+
+					<div className="socials w-fit mx-auto lg:mx-0 mt-[40px] lg:mt-auto ml-0 lg:ml-auto flex flex-row items-center lg:items-end justify-center lg:justify-end gap-4">
 						<Link
 							className=""
 							href={"/"}>

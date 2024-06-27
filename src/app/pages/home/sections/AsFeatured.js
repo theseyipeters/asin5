@@ -15,7 +15,7 @@ export default function AsFeatured() {
 		}
 	}, []);
 	return (
-		<section className=" w-full flex flex-col items-center justify-center">
+		<section className="hidden  w-full lg:flex flex-col items-center justify-center">
 			<h1 className="text-2xl font-medium">As Featured In</h1>
 
 			<div

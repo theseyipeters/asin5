@@ -14,14 +14,14 @@ export default function Navbar() {
 		{ name: "More", link: "/SIP" },
 	];
 	return (
-		<nav className="px-[120px] py-[20px] w-full flex flex-row items-center justify-between bg-white-2 min-h-[100px] z-40">
+		<nav className="px-[30px] md:px-[50px] lg:px-[120px] py-[20px] w-full flex flex-row items-center justify-between bg-white-2 min-h-[100px] z-40">
 			<div className="flex flex-row items-center gap-6 w-fit">
 				<SincLogo />
 
 				<ul className="flex flex-row gap-4">
 					{navItems.map((item, index) => (
 						<Link
-							className="text-base lg:text-lg"
+							className="text-base font-normal lg:text-lg"
 							href={item.link}
 							key={index}>
 							{item.name}

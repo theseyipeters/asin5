@@ -5,20 +5,20 @@ import GlobalButton from "@/components/ui/GlobalButton";
 
 export default function EquityCard() {
 	return (
-		<div className="w-[25%] h-fit bg-white-1 rounded-2xl p-5">
-			<div className="flex flex-col gap-5">
-				<div className="flex flex-col gap-3">
+		<div className="w-full md:w-[350px] lg:w-full h-fit bg-white-1 rounded-2xl p-5">
+			<div className="w-full flex flex-col gap-5">
+				<div className="w-full flex flex-col gap-3">
 					<Image
 						src={kreeca}
 						alt="kreeca"
-						className="w-3/5"
+						className="w-2/5 lg:w-3/5"
 					/>
 					<p className="font-light">
 						This company is a SAAS Startup that builds AI copy generator...
 					</p>
 				</div>
 
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-4 w-full">
 					<h3 className="text-lg font-medium">UX Strategist</h3>
 
 					<div className="flex flex-row items-center justify-between">

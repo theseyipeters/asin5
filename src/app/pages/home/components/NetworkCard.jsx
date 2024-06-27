@@ -4,7 +4,7 @@ import React from "react";
 const NetworkCard = ({ heading, comment1, comment2 }) => {
 	return (
 		<div className="w-full bg-white-1 h-auto p-6 flex flex-col gap-5 rounded-xl">
-			<h2 className="text-2xl leading-[28.8px] font-normal w-[90%]">
+			<h2 className="text-2xl leading-[28.8px] font-medium w-[90%]">
 				{heading}
 			</h2>
 

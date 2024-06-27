@@ -4,19 +4,19 @@ import ArrowRight from "@/svgs/ArrowRight";
 
 export default function CoFound() {
 	return (
-		<section className="px-[120px] w-full flex flex-col items-center justify-center">
+		<section className="px-[30px] md:px-[50px] lg:px-[120px] w-full flex flex-col items-center justify-center">
 			<div className="w-full flex flex-col items-center justify-center">
-				<div className="w-[60%] flex flex-col items-center">
-					<h1 className="font-medium text-5xl text-center leading-[72.8px]">
+				<div className="w-full lg:w-[80%] flex flex-col gap-4 lg:gap-8 items-center">
+					<h1 className="w-full lg:w-[80%]  text-[24px] md:text-[28px] lg:text-5xl text-center font-medium leading-[32px] text-black-1 mx-auto">
 						Co-found With Us
 					</h1>
-					<p className="text-center font-light">
+					<p className="text-sm md:text-base lg:text-base text-center font-light">
 						We seek to collaborate with visionary individuals who are solving
 						similar problems of helping entrepreneurs succeed
 					</p>
 				</div>
 			</div>
-			<div className="w-full lg:h-[300px] flex flex-col lg:flex-row mt-[64px] items-center justify-between">
+			<div className="w-full h-full lg:h-[300px] flex flex-col lg:flex-row mt-[44px] lg:mt-[64px] items-center justify-between gap-6">
 				<CoFoundCard
 					index={"1"}
 					bgColor={`bg-black-1`}

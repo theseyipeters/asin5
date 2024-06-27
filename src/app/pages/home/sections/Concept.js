@@ -17,20 +17,20 @@ export default function Concept() {
 		},
 	];
 	return (
-		<section className="px-[120px] w-full flex flex-col items-center justify-center">
-			<div className="border w-full flex flex-col items-center justify-center">
-				<div className="w-[60%] flex flex-col items-center">
-					<h1 className="font-medium text-5xl text-center leading-[72.8px]">
+		<section className="px-[30px] md:px-[50px] lg:px-[120px] w-full h-fit flex flex-col items-center justify-center">
+			<div className="w-full flex flex-col items-center justify-center">
+				<div className="w-full lg:w-[60%] flex flex-col gap-4 lg:gap-8 items-center">
+					<h1 className="w-full lg:w-[80%]  text-[24px] md:text-[28px] lg:text-5xl text-center font-medium leading-[32px] text-black-1 mx-auto">
 						Our Concept Innovations
 					</h1>
-					<p className="text-center font-light">
+					<p className="text-center font-light w-[80%]">
 						We have proprietary concept innovations that will support the
 						startup ecosystem, support solution-providers/entrepreneurs and
 						ultimately help democratize success;
 					</p>
 				</div>
 
-				<div className="w-full flex flex-row items-center justify-between h-full mt-[64px]">
+				<div className="w-full flex flex-col lg:flex-row items-center gap-y-6 justify-between h-full mt-[64px]">
 					{conceptArray.map((concept, index) => (
 						<ConceptCard
 							key={index}

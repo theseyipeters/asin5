@@ -22,13 +22,13 @@ export default function HeroSection() {
 		}
 	};
 
-	// useEffect(() => {
-	// 	const interval = setInterval(() => {
-	// 		setActiveSection((prevSection) => (prevSection + 1) % 3);
-	// 	}, 5000);
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setActiveSection((prevSection) => (prevSection + 1) % 3);
+		}, 10000);
 
-	// 	return () => clearInterval(interval);
-	// }, []);
+		return () => clearInterval(interval);
+	}, []);
 
 	return (
 		<section className="hero-container w-full flex h-[400px] lg:h-[550px] relative ">

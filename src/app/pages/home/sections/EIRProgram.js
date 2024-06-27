@@ -137,7 +137,7 @@ export default function EIRProgram() {
 					</p>
 				</div>
 
-				<div className="pl-[30px] md:pl-[50px] lg:pl-[120px] pr-[30px] md:pr-[50px] lg:pr-[0px]  w-full flex flex-col lg:flex-row mt-[64px] items-center gap-8 overflow-hidden">
+				<div className="pl-[30px] md:pl-[50px] lg:pl-[120px] pr-[30px] md:pr-[50px] lg:pr-[0px]  w-full flex flex-col lg:flex-row mt-[64px] items-center justify-center gap-8 overflow-hidden">
 					<AnimatePresence mode="wait">
 						{displayedCards.map((card, index) => (
 							<motion.div

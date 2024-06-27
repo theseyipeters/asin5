@@ -53,7 +53,7 @@ export default function Footer() {
 								(usually 0.5% to 2%)
 							</p>
 						</div>
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+						<div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
 							<div className="mb-4">
 								<h3 className="font-medium text-lg">Platforms</h3>
 								<ul className="mt-3 flex flex-col gap-2">

@@ -78,7 +78,7 @@ export default function InvestorsNetwork() {
 						<span className="font-light">(Invest from $50k and above)</span>
 					</h2>
 
-					<div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-normal">
+					<div className="lg:h-[300px] lg:min-h-[200px] lg:max-h-fit w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-normal">
 						<DealCard
 							dealNumber={"1"}
 							dealList={deal1}
@@ -103,7 +103,7 @@ export default function InvestorsNetwork() {
 						<span className="font-light">(Invest from $500 & above)</span>
 					</h2>
 
-					<div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-normal">
+					<div className="lg:h-[300px] lg:min-h-[200px] lg:max-h-fit w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-normal">
 						<DealCard
 							dealNumber={"5"}
 							dealList={deal1}

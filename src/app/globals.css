@@ -4,31 +4,31 @@
 
 @font-face {
 	font-family: "Matter";
-	src: url("/public/fonts/Matter-Light.ttf") format("truetype");
+	src: url("/src/app/fonts/Matter-Light.ttf") format("truetype");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Matter";
-	src: url("/public/fonts/Matter-Regular.ttf") format("truetype");
+	src: url("/src/app/fonts/Matter-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Matter";
-	src: url("/public/fonts/Matter-Medium.ttf") format("truetype");
+	src: url("/src/app/fonts/Matter-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Matter";
-	src: url("/public/fonts/Matter-Semibold.ttf") format("truetype");
+	src: url("/src/app/fonts/Matter-Semibold.ttf") format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Matter";
-	src: url("/public/fonts/Matter-Bold.ttf") format("truetype");
+	src: url("/src/app/fonts/Matter-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }

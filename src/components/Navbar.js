@@ -72,7 +72,7 @@ export default function Navbar() {
 				</div>
 			</nav>
 
-			<nav className="lg:hidden px-[30px] md:px-[50px] lg:px-[120px] py-[20px] w-full flex flex-row items-center justify-between bg-white-2 min-h-[100px] z-40">
+			<nav className="lg:hidden px-[30px] md:px-[50px] lg:px-[120px] py-[20px] w-full flex flex-row items-center justify-between bg-white-2 h-[80px] z-40">
 				{!showMenu && (
 					<div className="flex flex-row items-center justify-between gap-6 w-fit">
 						<SincLogoSM />
@@ -87,7 +87,7 @@ export default function Navbar() {
 				{showMenu && (
 					<div
 						style={{ opacity: 0.95, transition: "opacity 1s ease" }}
-						className="fixed flex flex-col gap-6 md:items-center md:justify-center h-screen w-screen bg-white-1 text-black-1 top-10 left-0 shadow-md p-[30px] z-40 overflow-y-auto">
+						className="fixed flex flex-col gap-6 md:items-center md:justify-center h-screen w-screen bg-white-1 text-black-1 top-0 left-0 shadow-md p-[30px] z-40 overflow-y-auto">
 						<ul className="flex flex-col gap-4">
 							{navItems.map((item, index) => (
 								<Link

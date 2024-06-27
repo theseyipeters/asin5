@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import kreeca from "@/assets/portfolioLogos/kreeca.svg";
 import GlobalButton from "@/components/ui/GlobalButton";
 
 export default function EquityCard() {
+	const [buttonSize, setButtonSize] = useState("sm");
+
+	useEffect(() => {
+		const updateButtonSize = () => {
+			if (window.innerWidth >= 1024) {
+				setButtonSize("lg");
+			} else if (window.innerWidth >= 768) {
+				setButtonSize("md");
+			} else {
+				setButtonSize("sm");
+			}
+		};
+
+		// Set the initial size
+		updateButtonSize();
+
+		// Add event listener to handle screen resize
+		window.addEventListener("resize", updateButtonSize);
+
+		// Clean up event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", updateButtonSize);
+		};
+	}, []);
+
 	return (
 		<div className="w-full md:w-[350px] lg:w-full h-fit bg-white-1 rounded-2xl p-5">
 			<div className="w-full flex flex-col gap-5">
@@ -56,7 +81,7 @@ export default function EquityCard() {
 				<div className="w-[70%]">
 					<GlobalButton
 						variant={"primary"}
-						size={"lg"}
+						size={buttonSize}
 						state="default">
 						View Details
 					</GlobalButton>

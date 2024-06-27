@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import EquityCard from "../components/EquityCard";
 import ArrowRight from "@/svgs/ArrowRight";
 import Back from "@/svgs/Back";
@@ -9,11 +9,14 @@ import Forward from "@/svgs/Forward";
 export default function EquityJobs() {
 	const [currentPage, setCurrentPage] = useState(0);
 	const [direction, setDirection] = useState(0); // 1 for forward, -1 for backward
+	const [windowWidth, setWindowWidth] = useState(0);
+
 	const itemsPerPage = {
 		sm: 1,
 		md: 2,
 		lg: 4,
 	};
+
 	const cards = [
 		<EquityCard key={1} />,
 		<EquityCard key={2} />,
@@ -26,12 +29,27 @@ export default function EquityJobs() {
 		// Add more cards as needed
 	];
 
-	const getWindowWidth = () => window.innerWidth;
+	useEffect(() => {
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+		};
+
+		// Set initial window width
+		handleResize();
+
+		// Add resize event listener
+		window.addEventListener("resize", handleResize);
+
+		// Cleanup event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	const cardsPerPage =
-		getWindowWidth() >= 1024
+		windowWidth >= 1024
 			? itemsPerPage.lg
-			: getWindowWidth() >= 768
+			: windowWidth >= 768
 			? itemsPerPage.md
 			: itemsPerPage.sm;
 	const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
@@ -65,7 +83,7 @@ export default function EquityJobs() {
 				</div>
 			</div>
 
-			<div className="w-full flex flex-row gap-8 items-center justify-between h-full mt-[44px] lg:mt-[64px]">
+			<div className="w-full flex flex-row gap-8 items-center justify-between h-full mt-[44px] lg:mt-[64px] overflow-hidden">
 				{displayedCards.map((card, index) => (
 					<div
 						key={card.key}

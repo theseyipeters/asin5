@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function VideoCard() {
 	return (
-		<div className="w-full lg:w-[33.3%] h-fit bg-white-1">
+		<div className="w-full lg:w-[33.3%] h-fit">
 			<iframe
 				className="w-full h-[335px]"
 				src="https://www.youtube.com/embed/bNpx7gpSqbY?si=VxqIl8x9c36oA9WS"

@@ -46,15 +46,15 @@ export default function Footer() {
 								<SincLogo2 />
 							</div>
 
-							<p className="font-light leading-[27px]">
+							<p className="font-light w-[70%] lg:w-full leading-[27px]">
 								SINC Partners is a service incubation company connecting experts
 								in product development and growth marketing willing to offer
 								their services to amazing startups in exchange for minute equity
 								(usually 0.5% to 2%)
 							</p>
 						</div>
-						<div className="grid grid-cols-2 lg:flex flex-row flex-wrap items-center justify-between gap-x-4">
-							<div className="w-[180px] mb-4 lg:w-[122px]">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+							<div className="mb-4">
 								<h3 className="font-medium text-lg">Platforms</h3>
 								<ul className="mt-3 flex flex-col gap-2">
 									<Link
@@ -99,7 +99,7 @@ export default function Footer() {
 									</Link>
 								</ul>
 							</div>
-							<div className="w-[180px] mb-4 lg:w-[122px]">
+							<div className="mb-4">
 								<h3 className="font-medium text-lg">Initiatives</h3>
 								<ul className="mt-3 flex flex-col gap-2">
 									<Link
@@ -144,7 +144,7 @@ export default function Footer() {
 									</Link>
 								</ul>
 							</div>
-							<div className="w-[180px] mb-4 lg:w-[122px]">
+							<div className="mb-4">
 								<h3 className="font-medium text-lg">About Us</h3>
 								<ul className="mt-3 flex flex-col gap-2">
 									<Link
@@ -189,7 +189,7 @@ export default function Footer() {
 									</Link>
 								</ul>
 							</div>
-							<div className="w-[180px] mb-4 lg:w-[122px]">
+							<div className="mb-4">
 								<h3 className="font-medium text-lg">More</h3>
 								<ul className="mt-3 flex flex-col gap-2">
 									<Link
@@ -237,8 +237,8 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="w-full lg:w-[25%] h-full px-5 flex flex-row items-start gap-10 justify-between pb-4 lg:pb-0">
-					<div className="w-full lg:w-[520px] flex flex-col gap-10">
+				<div className="w-full lg:w-[25%] h-full px-0 lg:px-5 flex flex-row items-start gap-10 justify-between pb-4 lg:pb-0">
+					<div className="w-full lg:w-[720px] flex flex-col gap-10">
 						<div className="mt-[44px] w-full">
 							<h3 className="font-medium text-lg">Locations</h3>
 							<ul className="mt-3 flex flex-col gap-2">
@@ -259,7 +259,7 @@ export default function Footer() {
 						</div>
 					</div>
 
-					<div className="w-[500px] flex flex-row ml-auto mt-auto">
+					<div className="w-[500px] flex flex-row lg:ml-auto mt-auto">
 						<div className="w-full flex flex-col">
 							<svg
 								width="40"
@@ -357,39 +357,39 @@ export default function Footer() {
 						</div>
 					</div>
 
-					<div className="socials w-fit mx-auto lg:mx-0 mt-[40px] lg:mt-auto ml-0 lg:ml-auto flex flex-row items-center lg:items-end justify-center lg:justify-end gap-4">
+					<div className="socials w-full mx-auto lg:mx-0 mt-[40px] lg:mt-auto ml-0 lg:ml-auto flex flex-row items-center lg:items-end justify-center lg:justify-end gap-4">
 						<Link
-							className=""
+							className="flex"
 							href={"/"}>
 							<FB />
 						</Link>
 						<Link
-							className=""
+							className="flex"
 							href={"/"}>
 							<TW />
 						</Link>
 						<Link
-							className=""
+							className="flex"
 							href={"/"}>
 							<IG />
 						</Link>
 						<Link
-							className=""
+							className="flex"
 							href={"/"}>
 							<LI />
 						</Link>
 						<Link
-							className=""
+							className="flex"
 							href={"/"}>
 							<MD />
 						</Link>
 						<Link
-							className=""
+							className="flex"
 							href={"/"}>
 							<YT />
 						</Link>
 						<Link
-							className=""
+							className="flex"
 							href={"/"}>
 							<Image
 								src={unnamed}

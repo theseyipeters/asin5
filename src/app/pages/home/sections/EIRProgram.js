@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import EIRCard from "../components/EIRCard";
 import ArrowRight from "@/svgs/ArrowRight";
@@ -9,6 +9,8 @@ import Forward from "@/svgs/Forward";
 
 export default function EIRProgram() {
 	const [currentPage, setCurrentPage] = useState(0);
+	const [isLargeScreen, setIsLargeScreen] = useState(false);
+
 	const cardsPerPageLarge = 3;
 	const cardsPerPageSmall = 1;
 	const cards = [
@@ -27,7 +29,23 @@ export default function EIRProgram() {
 		// <EIRCard key={13} />,
 	];
 
-	const isLargeScreen = window.innerWidth >= 1024;
+	useEffect(() => {
+		const handleResize = () => {
+			setIsLargeScreen(window.innerWidth >= 1024);
+		};
+
+		// Check initial screen size
+		handleResize();
+
+		// Add resize event listener
+		window.addEventListener("resize", handleResize);
+
+		// Cleanup event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	const cardsPerPage = isLargeScreen ? cardsPerPageLarge : cardsPerPageSmall;
 	const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
 
